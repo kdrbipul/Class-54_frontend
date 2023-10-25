@@ -9,7 +9,15 @@ const AddUser = () => {
     const handleAddUser = (e) =>{
         e.preventDefault();
         console.log("clicked the button");
-        const form = e.target;
+        // const form = e.target;
+        fetch('http://localhost:5000/users', {
+            method:"POST",
+            headers:{
+                'content-type' : 'application/json',
+            },
+            body: JSON.stringify(user),
+        })
+
     }
 
     const handleOnBlur = (e) =>{
