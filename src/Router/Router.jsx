@@ -13,17 +13,17 @@ import Update from './../Update/Update';
     },
     {
         path:'/addUser',
-        element:<AddUser />
+        element: <AddUser />
     },
     {
         path:'/home',
-        element:<Home />,
-        loader:() => fetch('http://localhost:5000/users')
+        element: <Home />,
+        loader:() => fetch('http://localhost:5000/users'),
     },
     {
         path:'/update',
-        element:<Update />
-    }
+        element: <Update />,
+    },
  ])
 
  export default router;
