@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import AddUser from "../Component/AddUser/AddUser";
 import Main from "../Layout/Main";
 
  
@@ -7,6 +8,10 @@ import Main from "../Layout/Main";
         path:'/',
         element:<Main />,
     },
+    {
+        path:'/adduser',
+        element:<AddUser />
+    }
  ])
 
  export default router;
