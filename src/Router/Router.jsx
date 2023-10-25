@@ -21,8 +21,9 @@ import Update from './../Update/Update';
         loader:() => fetch('http://localhost:5000/users'),
     },
     {
-        path:'/update',
+        path:'/update/:id',
         element: <Update />,
+        loader: ({params}) => fetch(`http://localhost:5000/users/${params.id}`)
     },
  ])
 
